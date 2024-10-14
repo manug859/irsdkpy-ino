@@ -18,7 +18,7 @@ try:
             speed = ir['Speed']
             rpm = ir['RPM']
             
-            # Enviar la velocidad al Arduino
+            # Enviar la velocidad y rpm a Arduino
             data = f"{int(speed)},{int(rpm)}\n"
             arduino.write(data.encode('utf-8'))
             
