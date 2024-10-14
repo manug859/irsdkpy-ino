@@ -4,7 +4,6 @@ const int ledCount = sizeof(ledPins) / sizeof(ledPins[0]);  // Cantidad de LEDs
 
 // Variables para el parpadeo de los LEDs
 unsigned long previousMillis = 0;  // Guarda el tiempo del último parpadeo
-const long interval = 500;  // Intervalo de parpadeo en milisegundos
 bool ledState = false;  // Estado de los LEDs
 bool flashing = false;  // Variable para saber si los LEDs deben parpadear
 
